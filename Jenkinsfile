@@ -77,7 +77,7 @@ pipeline {
      }
     }
       steps {
-        sh 'bash firststepbash.sh'
+        sh 'bash /home/alon/firststepbash.sh'
       }
   }
     stage('Second step of Bash') {
@@ -88,7 +88,7 @@ pipeline {
      }
     }
       steps {
-        sh 'bash secondstepbash.sh'
+        sh 'bash /home/alon/secondstepbash.sh'
       }
   }
 }
