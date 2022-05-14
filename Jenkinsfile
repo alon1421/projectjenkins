@@ -106,7 +106,7 @@ pipeline {
 	      date >> ${report_file}
 	      echo "USER=$USER JOB_NAME=$JOB_NAME" >> ${report_file}
               echo "Build Number $BUILD_NUMBER" >> ${report_file}
-              cat "${WORKSPACE}/scripts/results" >> ${report_file}
+              cat "${WORKSPACE}/Scripts/results" >> ${report_file}
 	      echo "#############################" >> ${report_file}
             '''
          }
